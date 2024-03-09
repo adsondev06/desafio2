@@ -14,8 +14,8 @@ body {
 }
 
 .container {
-    width: 900px;
-    height: 450px;
+    width: 1000px;
+    height: 500px;
     background: hsl(243, 23%, 16%);
     display: flex;
     justify-content: space-between;
@@ -25,7 +25,7 @@ body {
 
 .card-text {
     color: #fff;
-    padding: 40px 20px;
+    padding: 50px 50px 100px 50px;
 }
 
 .card-text h1 {
@@ -41,16 +41,16 @@ h1 .color {
 }
 
 .card-text p {
-    margin: 40px 0 0 0;
+    margin: 50px 0 0 0;
     line-height: 22px;
     font-size: 16px;
     color: #e0d8d8;
 }
 
-.card-text .resultado {
+.resultado {
     display: flex;
     gap: 15px;
-    margin-top: 40px;
+    margin-top: 60px;
 }
 
 .result_geral {
@@ -64,17 +64,16 @@ h1 .color {
 }
 
 button {
-    margin: 25px 0 0 200px;
-    width: 120px;
-    /* height: 40px; */
-    padding: 15px;
+    margin: 30px -300px 0 0;
+    width: 150px;
+    padding: 20px 20px 20px 20px ;
     font-weight: bold;
     border-radius: 5px;
     border: none;
     background-color:rgba(139, 45, 228, 0.781);
     color: #fff;
     cursor: pointer;
-    /* transition: 1s ease-in-out; */
+    transition: 1s ease-in-out;
 }
 
 button:hover {
@@ -96,10 +95,13 @@ img {
 
 @media (max-width: 400px){
     .container {
-        display: flex;
-        flex-direction: column;
         width: 350px;
         height: 100%;
+    }
+
+    .card-text {
+        padding: 50px;
+        margin: 0 0 0 -30px;
     }
 
     .card-img {
@@ -107,7 +109,7 @@ img {
     }
 
     button {
-        margin: 40px 0 0 180px;
+        margin: 40px 0 0 10px;
     }
     
 }
