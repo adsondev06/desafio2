@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Inter"
+}
+
+body {
+    background: hsl(233, 47%, 7%);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 900px;
+    height: 450px;
+    background: hsl(243, 23%, 16%);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.card-text {
+    color: #fff;
+    padding: 40px 20px;
+}
+
+.card-text h1 {
+    font-size: 30px;
+}
+
+h1::first-letter {
+    font-size: 40px;
+}
+
+h1 .color {
+    color: rgb(139, 45, 228);
+}
+
+.card-text p {
+    margin: 40px 0 0 0;
+    line-height: 22px;
+    font-size: 16px;
+    color: #e0d8d8;
+}
+
+.card-text .resultado {
+    display: flex;
+    gap: 15px;
+    margin-top: 40px;
+}
+
+.result_geral {
+    background-color: #e7e4e427;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.card-text .result_geral:hover {
+    background-color:rgb(139, 45, 228);
+}
+
+button {
+    margin: 25px 0 0 200px;
+    width: 120px;
+    /* height: 40px; */
+    padding: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    background-color:rgba(139, 45, 228, 0.781);
+    color: #fff;
+    cursor: pointer;
+    /* transition: 1s ease-in-out; */
+}
+
+button:hover {
+    background-color: darkgray;
+    transition: 0.5s steps(100);
+    color: #000;
+}
+
+.card-img {
+    height: 100%;
+    background-color:rgb(139, 45, 228);
+}
+img {
+    height: 100%;
+    width: 500px;
+    mix-blend-mode: multiply;
+}
+
+
+@media (max-width: 400px){
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+        height: 100%;
+    }
+
+    .card-img {
+        display: none;
+    }
+
+    button {
+        margin: 40px 0 0 180px;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* img {
+    height: 100%;
+   mix-blend-mode: multiply;
+}
+
+.card-img  {
+    background-color: hsl(277, 64%, 61%);
+} */
