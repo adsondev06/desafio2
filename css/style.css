@@ -73,12 +73,10 @@ button {
     background-color:rgba(139, 45, 228, 0.781);
     color: #fff;
     cursor: pointer;
-    transition: 1s ease-in-out;
 }
 
 button:hover {
     background-color: darkgray;
-    transition: 0.5s steps(100);
     color: #000;
 }
 
@@ -93,27 +91,35 @@ img {
 }
 
 
-@media (max-width: 400px){
+@media(350px<=width<=1440px) {
     .container {
-        width: 350px;
-        height: 100%;
+        display: flex;
+        width: 100%;
+        height: 100vh;
     }
 
-    .card-text {
-        padding: 50px;
-        margin: 0 0 0 -30px;
-    }
-
-    .card-img {
+    img {
         display: none;
     }
 
-    button {
-        margin: 40px 0 0 10px;
+    .card-text {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+       margin-top: 100px;
+       padding: 30px;
     }
-    
-}
 
+    button {
+        margin: 50px -200px 0 0;
+    }
+
+    .resultado {
+        gap: 25px;
+        font-size: 18px;
+    }
+}
 
 
 
